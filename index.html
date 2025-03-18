@@ -8,82 +8,118 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'SF Pro Display', Arial, sans-serif;
             background-color: #f5f5f7;
             color: #1d1d1f;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         header {
             background-color: #000;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 20px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         header img {
-            width: 30px;
+            width: 35px;
             vertical-align: middle;
+            margin-right: 10px;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
         }
         .support-hero {
             text-align: center;
-            padding: 40px 0;
+            padding: 50px 20px;
             background-color: #fff;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
         .support-hero h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin: 0;
+            font-weight: 600;
         }
         .support-hero p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: #666;
+            margin: 10px 0;
         }
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .product {
             text-align: center;
-            width: 200px;
-            margin: 10px;
+            width: 220px;
+            margin: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         .product img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .product img:hover {
+            transform: scale(1.05);
         }
         .contact-section {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
         }
         .contact-section h2 {
-            font-size: 1.8em;
+            font-size: 2em;
+            font-weight: 600;
+            margin-top: 0;
         }
         .contact-section ul {
             list-style-type: none;
             padding: 0;
         }
         .contact-section li {
-            margin: 10px 0;
+            margin: 15px 0;
+            font-size: 1.1em;
         }
         .highlight {
             color: #007aff;
             font-weight: bold;
         }
+        .chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007aff;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .chat-btn:hover {
+            background-color: #005bb5;
+        }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             background-color: #000;
             color: #fff;
-            margin-top: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
         a {
             color: #007aff;
@@ -103,44 +139,47 @@
     <div class="container">
         <div class="support-hero">
             <h1>Get Support for Your Apple Products</h1>
-            <p>Need help? Call us at <span class="highlight">+1 509 873 7581</span> for immediate assistance.</p>
+            <p>Need assistance? Contact us at <span class="highlight">+1 509 873 7581</span> for expert help anytime.</p>
         </div>
 
         <div class="products">
             <div class="product">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/IPhone_13_Pro_Sierra_Blue.png" alt="iPhone 15 Pro">
-                <p>iPhone 15 Pro</p>
+                <img src="https://images.unsplash.com/photo-1630585308578-388da57433e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="iPhone">
+                <p>iPhone</p>
             </div>
             <div class="product">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/MacBook_Pro_M2_2022.png" alt="MacBook Air">
-                <p>MacBook Air</p>
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="MacBook">
+                <p>MacBook</p>
             </div>
             <div class="product">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/IPad_10th_generation.png" alt="iPad">
+                <img src="https://images.unsplash.com/photo-1618410321329-1db6a8e6e270?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="iPad">
                 <p>iPad</p>
             </div>
             <div class="product">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_Watch_Series_8.png" alt="Apple Watch">
+                <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c6e7d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Apple Watch">
                 <p>Apple Watch</p>
             </div>
         </div>
 
         <div class="contact-section">
             <h2>Contact Us</h2>
-            <p>For any type of concern, we’re here to assist you. Reach out to our support team at <span class="highlight">+1 509 873 7581</span> or explore the options below:</p>
+            <p>We’re here to resolve any issue with your Apple devices. Call our support team at <span class="highlight">+1 509 873 7581</span> or choose an option below:</p>
             <ul>
-                <li><strong>Technical Support:</strong> Facing issues with your iPhone, Mac, iPad, or Apple Watch? Call <span class="highlight">+1 509 873 7581</span> for troubleshooting and repair assistance.</li>
-                <li><strong>Billing & Account Issues:</strong> Need help with your Apple ID, subscriptions, or payments? Contact us at <span class="highlight">+1 509 873 7581</span>.</li>
-                <li><strong>Product Inquiries:</strong> Want to know more about features or specifications? Dial <span class="highlight">+1 509 873 7581</span> to speak with an expert.</li>
-                <li><strong>Warranty & Repairs:</strong> For hardware concerns or warranty claims, reach out at <span class="highlight">+1 509 873 7581</span> to schedule a service.</li>
-                <li><strong>General Questions:</strong> Any other concerns? We’re just a call away at <span class="highlight">+1 509 873 7581</span>.</li>
+                <li><strong>Technical Support:</strong> Problems with your iPhone, Mac, iPad, or Apple Watch? Dial <span class="highlight">+1 509 873 7581</span> for troubleshooting and repair help.</li>
+                <li><strong>Billing & Account Issues:</strong> Assistance with Apple ID, subscriptions, or payments is available at <span class="highlight">+1 509 873 7581</span>.</li>
+                <li><strong>Product Inquiries:</strong> Curious about features or specs? Call <span class="highlight">+1 509 873 7581</span> to speak with a specialist.</li>
+                <li><strong>Warranty & Repairs:</strong> For hardware issues or warranty claims, contact us at <span class="highlight">+1 509 873 7581</span> to arrange service.</li>
+                <li><strong>General Questions:</strong> Have other concerns? Reach us anytime at <span class="highlight">+1 509 873 7581</span>.</li>
             </ul>
-            <p>Our support team is available 24/7 to ensure you get the help you need. Don’t hesitate—call <span class="highlight">+1 509 873 7581</span> today!</p>
+            <p>Our dedicated support team is available 24/7. Call <span class="highlight">+1 509 873 7581</span> now for fast, reliable assistance!</p>
         </div>
     </div>
 
+    <button class="chat-btn">Live Chat</button>
+
     <footer>
-        <p>Apple Support | Call Us: <span class="highlight">+1 509 873 7581</span> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        <p>Apple Support | Call Us: <span class="highlight">+1 509 873 7581</span> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">FAQ</a></p>
+        <p>&copy; 2025 Apple Inc. All rights reserved.</p>
     </footer>
 </body>
 </html>
